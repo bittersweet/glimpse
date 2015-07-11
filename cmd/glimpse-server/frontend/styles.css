@@ -1,0 +1,33 @@
+body {
+  background-color: rgb(47, 56, 63);
+  font-family: "Fira Mono";
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+#messages li {
+  /* padding: 7px; */
+  display: block;
+  /* line-height: .5em; */
+  color: rgb(207, 207, 207);
+}
+
+#messages li:hover {
+  background: #3b474f;
+}
+
+#messages li span.timestamp {
+  color: #6d6d6d;
+  border-right: 1px solid pink;
+  padding-right: 20px;
+}
+
+#messages li span.line {
+  padding-left: 20px;
+}
+
+.highlight {
+  color: pink;
+  font-weight: 600;
+}
+
