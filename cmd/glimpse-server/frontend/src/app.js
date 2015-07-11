@@ -16,7 +16,8 @@ var App = React.createClass({
   }
 });
 
-var client = new EventSource('http://127.0.0.1:8001');
+var host = new URL(window.location).hostname;
+var client = new EventSource('http://' + host + ':8001');
 client.onmessage = function(message) {
   Actions.newMessage(message);
 };
